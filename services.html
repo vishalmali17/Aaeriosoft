@@ -4,12 +4,47 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Pricing | AI Tool - Tailwind CSS Template for AI Tools</title>
-  <link href="favicon.ico" rel="icon" />
-  <link href="../css/style.css" rel="stylesheet" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title -->
+  <title>Our IT Services | Aaeriosoft - Web, Mobile, Cloud & Consultancy</title>
+
+  <!-- Meta Description -->
+  <meta name="description"
+    content="Explore Aaeriosoft's IT services including web & mobile app development, UI/UX design, cloud solutions, cybersecurity, branding, and 24/7 technical support for businesses of all sizes." />
+
+  <!-- Keywords -->
+  <meta name="keywords"
+    content="Aaeriosoft services, IT consultancy India, web development, mobile app development, UI/UX design, cloud solutions, cybersecurity, branding, IT support, software development" />
+  <meta name="author" content="Aaeriosoft" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://aaeriosoft.co.in/services" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="IT Services | Aaeriosoft - Web, Mobile, Cloud & Consultancy" />
+  <meta property="og:description"
+    content="Discover our IT solutions: web & mobile apps, UI/UX, cloud services, cybersecurity, branding, and technical support to empower your business growth." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aaeriosoft.co.in/services" />
+  <meta property="og:image" content="https://aaeriosoft.co.in/assets/og-services.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="IT Services | Aaeriosoft - Web, Mobile, Cloud & Consultancy" />
+  <meta name="twitter:description"
+    content="Explore Aaeriosoft's IT services: development, cloud, UI/UX, branding & 24/7 support to help your business grow." />
+  <meta name="twitter:image" content="https://aaeriosoft.co.in/assets/og-services.jpg" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="alternate icon" type="image/png" href="images/favicon.png" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
+
 
 <body x-data="{ page: 'pricing', 'loaded': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }">
   
@@ -92,7 +127,7 @@
 
 
   <main>
-    <section class="relative z-10 pt-30 lg:pt-35 xl:pt-40 pb-18">
+  <section class="relative z-10 pt-30 lg:pt-35 xl:pt-40 pb-18">
       <div class="absolute top-25 left-0 w-full flex flex-col gap-3 -z-1 opacity-50">
         <div class="w-full h-[1.24px] footer-bg-gradient"></div>
         <div class="w-full h-[2.47px] footer-bg-gradient"></div>
@@ -108,27 +143,18 @@
       </div>
       <div class="text-center px-4">
         <h1 class="font-extrabold text-heading-2 text-white mb-5.5">
-          Services Table
+          What We Offer
         </h1>
-        <ul class="flex items-center justify-center gap-2">
-          <li class="font-medium"><a href="index.html">Home</a></li>
-          <li class="font-medium">/ Our Services</li>
-        </ul>
+          <p class="max-w-[714px] mx-auto font-medium">
+            We provide comprehensive digital solutions to help your business grow, from design to development and ongoing maintenance.
+      </p>
+          </p>
       </div>
     </section>
 
 <section class="relative z-20 overflow-hidden pb-20" x-data="{ 'showContent': false, 'scrollContent': false }">
   <div class="max-w-[1170px] mx-auto px-4 sm:px-8 xl:px-0">
-    <div class="wow fadeInUp mb-15 text-center">
-      <span class="hero-subtitle-gradient relative mb-4 font-medium text-sm inline-flex items-center gap-2 py-2 px-4.5 rounded-full">
-        <img alt="icon" src="../images/icon-title.svg" />
-        <span class="hero-subtitle-text"> Our Services </span>
-      </span>
-      <h2 class="text-white mb-4.5 text-2xl font-extrabold sm:text-4xl xl:text-heading-2">What We Offer</h2>
-      <p class="max-w-[714px] mx-auto font-medium">
-        We provide comprehensive digital solutions to help your business grow, from design to development and ongoing maintenance.
-      </p>
-    </div>
+ 
     
     <div :class="{ 'max-h-[855px] overflow-hidden' :!showContent }" @scroll.window="scrollContent = (scrollY > $el.offsetTop - 500) ? true : false" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7.5">
       

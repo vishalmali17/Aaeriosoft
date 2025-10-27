@@ -62,6 +62,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="../css/style.css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   </head>
 
   <body
@@ -947,6 +948,119 @@
         ></path>
       </svg>
     </button>
+
+    
+  <!-- Hiring Exam Popup -->
+  <div id="hiring-popup-overlay" class="hiring-popup-overlay">
+    <div class="hiring-popup-content">
+      <button id="hiring-popup-close-btn" class="hiring-popup-close-btn">
+        <i class="fas fa-times"></i>
+      </button>
+      
+      <div class="hiring-popup-badge">
+        <i class="fas fa-bolt mr-2"></i>Hiring Opportunity
+      </div>
+      
+      <h2 class="hiring-popup-title">Join Our Team of Innovators</h2>
+      
+      <p class="hiring-popup-description">
+        We're looking for talented individuals to join our growing team. Take our technical assessment to showcase your skills and start your journey with us.
+      </p>
+      
+      <div class="hiring-popup-features">
+        <div class="hiring-popup-feature">
+          <div class="hiring-popup-feature-icon">
+            <i class="fas fa-code text-purple-400 text-xl"></i>
+          </div>
+          <div class="hiring-popup-feature-text">
+            <h4>Technical Assessment</h4>
+            <p>Showcase your coding skills</p>
+          </div>
+        </div>
+        
+        <div class="hiring-popup-feature">
+          <div class="hiring-popup-feature-icon">
+            <i class="fas fa-clock text-purple-400 text-xl"></i>
+          </div>
+          <div class="hiring-popup-feature-text">
+            <h4>90 Minute Challenge</h4>
+            <p>Complete at your own pace</p>
+          </div>
+        </div>
+        
+        <div class="hiring-popup-feature">
+          <div class="hiring-popup-feature-icon">
+            <i class="fas fa-trophy text-purple-400 text-xl"></i>
+          </div>
+          <div class="hiring-popup-feature-text">
+            <h4>Fast-Track Hiring</h4>
+            <p>Quick feedback process</p>
+          </div>
+        </div>
+        
+        <div class="hiring-popup-feature">
+          <div class="hiring-popup-feature-icon">
+            <i class="fas fa-users text-purple-400 text-xl"></i>
+          </div>
+          <div class="hiring-popup-feature-text">
+            <h4>Join Our Community</h4>
+            <p>Work with industry experts</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hiring-popup-btn-container">
+        <a href="https://exam.aaeriosoft.co.in/" class="hiring-popup-btn hiring-popup-btn-primary">
+          <i class="fas fa-play-circle mr-2"></i> Start Assessment
+        </a>
+     <button id="hiring-popup-roles-btn" class="hiring-popup-btn hiring-popup-btn-secondary">
+  <i class="fas fa-briefcase mr-2"></i> View Open Roles
+</button>
+      </div>
+      
+      <p class="hiring-popup-note">By proceeding, you agree to our assessment terms</p>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const hiringPopupOverlay = document.getElementById('hiring-popup-overlay');
+      const hiringPopupCloseBtn = document.getElementById('hiring-popup-close-btn');
+      const hiringPopupLaterBtn = document.getElementById('hiring-popup-later-btn');
+      const showPopupBtn = document.getElementById('show-popup-btn');
+      
+      // Check if popup was already shown in this session
+      const popupShown = sessionStorage.getItem('hiringPopupShown');
+      
+      // Function to show popup
+      function showHiringPopup() {
+        hiringPopupOverlay.classList.add('active');
+        sessionStorage.setItem('hiringPopupShown', 'true');
+      }
+      
+      // Function to hide popup
+      function hideHiringPopup() {
+        hiringPopupOverlay.classList.remove('active');
+      }
+      
+      // Show popup automatically after 2 seconds if not shown before
+      if (!popupShown) {
+        setTimeout(showHiringPopup, 2000);
+      }
+      
+      // Event listeners
+      hiringPopupCloseBtn.addEventListener('click', hideHiringPopup);
+      hiringPopupLaterBtn.addEventListener('click', hideHiringPopup);
+      showPopupBtn.addEventListener('click', showHiringPopup);
+      
+      // Close popup when clicking outside the content
+      hiringPopupOverlay.addEventListener('click', function(e) {
+        if (e.target === hiringPopupOverlay) {
+          hideHiringPopup();
+        }
+      });
+    });
+  </script>
 
     <script defer="" src="../js/bundle.js"></script>
     <script>

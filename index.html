@@ -47,6 +47,8 @@
 
 
 <body x-data="{ page: 'home', 'loaded': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }">
+
+  
   <!-- Header Section Start -->
   <header
     :class="{ 'bg-dark/70 backdrop-blur-lg shadow !py-4 lg:!py-0 transition duration-100 before:absolute before:w-full before:h-[1px] before:bottom-0 before:left-0 before:features-row-border' : stickyMenu }"
@@ -125,6 +127,8 @@
   </header>
 
   <!-- Header Section End -->
+
+
 
   <main>
     <!-- Hero Section Start -->
@@ -948,8 +952,12 @@
         </div>
       </div>
     </section>
+
+    
   </main>
 
+
+  
   <footer class="relative z-10 pb-17.5 lg:pb-22.5 xl:pb-27.5">
     <div class="absolute bottom-0 left-0 w-full flex flex-col gap-3 -z-1 opacity-50">
       <div class="w-full h-[1.24px] footer-bg-gradient"></div>
@@ -1130,5 +1138,6 @@
       }
     })();
   </script>
+
 </body>
 </html>

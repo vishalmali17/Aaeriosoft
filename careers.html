@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-    <head>
+
+<head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -41,9 +42,10 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
-    <body x-data="{ page: 'about', 'loaded': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }">
+<body x-data="{ page: 'about', 'loaded': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }">
   <header
     :class="{ 'bg-dark/70 backdrop-blur-lg shadow !py-4 lg:!py-0 transition duration-100 before:absolute before:w-full before:h-[1px] before:bottom-0 before:left-0 before:features-row-border' : stickyMenu }"
     @scroll.window="stickyMenu = (window.scrollY &gt; 0) ? true : false"
@@ -120,312 +122,315 @@
     </div>
   </header>
   <section class="relative z-10 pt-30 lg:pt-35 xl:pt-40 pb-18">
-      <div class="absolute top-25 left-0 w-full flex flex-col gap-3 -z-1 opacity-50">
-        <div class="w-full h-[1.24px] footer-bg-gradient"></div>
-        <div class="w-full h-[2.47px] footer-bg-gradient"></div>
-        <div class="w-full h-[3.71px] footer-bg-gradient"></div>
-        <div class="w-full h-[4.99px] footer-bg-gradient"></div>
-        <div class="w-full h-[6.19px] footer-bg-gradient"></div>
-        <div class="w-full h-[7.42px] footer-bg-gradient"></div>
-        <div class="w-full h-[8.66px] footer-bg-gradient"></div>
-        <div class="w-full h-[9.90px] footer-bg-gradient"></div>
-        <div class="w-full h-[13px] footer-bg-gradient"></div>
-      </div>
-      <div class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-dark/0 to-dark -z-1">
-      </div>
-      <div class="text-center px-4">
-        <h1 class="font-extrabold text-heading-2 text-white mb-5.5">
-          Grow Your Career with Aaeriosoft
-        </h1>
-          <p class="max-w-[714px] mx-auto font-medium">
-             At Aaeriosoft, we’re more than a workplace — we’re a community of innovators. Join us to explore exciting opportunities, learn from industry leaders, and contribute to projects that shape the future of digital transformation.
-          </p>
-      </div>
-    </section>
-    <section class="pt-12.5">
-      <div class="max-w-[1170px] mx-auto px-4 sm:px-8 xl:px-0">
-        <div class="grid sm:grid-cols-12 gap-7.5" data-highlighter="">
-          <div class="sm:col-span-12">
-            <div class="relative rounded-3xl features-box-border">
-              <div class="relative overflow-hidden rounded-3xl p-10 xl:p-15 box-hover">
-                <div class="flex items-center justify-between relative z-20">
-                  <div class="max-w-[477px] w-full">
-                    <span
-                      class="hero-subtitle-gradient relative mb-4 font-medium text-sm inline-flex items-center gap-2 py-2 px-4.5 rounded-full">
-                      <img alt="icon" src="../images/icon-title.svg" />
-                      <span class="hero-subtitle-text">
-                        Discover More About Aaeriosoft
-                      </span>
+    <div class="absolute top-25 left-0 w-full flex flex-col gap-3 -z-1 opacity-50">
+      <div class="w-full h-[1.24px] footer-bg-gradient"></div>
+      <div class="w-full h-[2.47px] footer-bg-gradient"></div>
+      <div class="w-full h-[3.71px] footer-bg-gradient"></div>
+      <div class="w-full h-[4.99px] footer-bg-gradient"></div>
+      <div class="w-full h-[6.19px] footer-bg-gradient"></div>
+      <div class="w-full h-[7.42px] footer-bg-gradient"></div>
+      <div class="w-full h-[8.66px] footer-bg-gradient"></div>
+      <div class="w-full h-[9.90px] footer-bg-gradient"></div>
+      <div class="w-full h-[13px] footer-bg-gradient"></div>
+    </div>
+    <div class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-dark/0 to-dark -z-1">
+    </div>
+    <div class="text-center px-4">
+      <h1 class="font-extrabold text-heading-2 text-white mb-5.5">
+        Grow Your Career with Aaeriosoft
+      </h1>
+      <p class="max-w-[714px] mx-auto font-medium">
+        At Aaeriosoft, we’re more than a workplace — we’re a community of innovators. Join us to explore exciting
+        opportunities, learn from industry leaders, and contribute to projects that shape the future of digital
+        transformation.
+      </p>
+    </div>
+  </section>
+  <section class="pt-12.5">
+    <div class="max-w-[1170px] mx-auto px-4 sm:px-8 xl:px-0">
+      <div class="grid sm:grid-cols-12 gap-7.5" data-highlighter="">
+        <div class="sm:col-span-12">
+          <div class="relative rounded-3xl features-box-border">
+            <div class="relative overflow-hidden rounded-3xl p-10 xl:p-15 box-hover">
+              <div class="flex items-center justify-between relative z-20">
+                <div class="max-w-[477px] w-full">
+                  <span
+                    class="hero-subtitle-gradient relative mb-4 font-medium text-sm inline-flex items-center gap-2 py-2 px-4.5 rounded-full">
+                    <img alt="icon" src="../images/icon-title.svg" />
+                    <span class="hero-subtitle-text">
+                      Discover More About Aaeriosoft
                     </span>
-                    <h3 class="text-white mb-4.5 font-bold text-heading-4">
-                      Our Vision for Digital Empowerment
-                    </h3>
-                    <p class="font-medium mb-10">
-                      At Aaeriosoft, we are dedicated to driving digital
-                      transformation
-                      that help businesses thrive in a competitive world.
-                    </p>
-                    <a class="features-button-gradient relative inline-flex items-center gap-1.5 rounded-full py-3 px-6 text-white text-sm ease-in duration-300 hover:shadow-button"
-                      href="about.html">
-                      Learn more
-                      <svg fill="none" height="12" viewbox="0 0 14 12" width="14" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M13.3992 5.60002L8.22422 0.350024C7.99922 0.125024 7.64922 0.125024 7.42422 0.350024C7.19922 0.575024 7.19922 0.925025 7.42422 1.15002L11.6242 5.42503H0.999219C0.699219 5.42503 0.449219 5.67502 0.449219 5.97502C0.449219 6.27502 0.699219 6.55003 0.999219 6.55003H11.6742L7.42422 10.875C7.19922 11.1 7.19922 11.45 7.42422 11.675C7.52422 11.775 7.67422 11.825 7.82422 11.825C7.97422 11.825 8.12422 11.775 8.22422 11.65L13.3992 6.40002C13.6242 6.17502 13.6242 5.82502 13.3992 5.60002Z"
-                          fill="white"></path>
-                      </svg>
-                    </a>
-                  </div>
-                  <div class="max-w-[428px] w-full hidden sm:block">
-                    <img alt="icon" src="../images/big-icon.svg" />
-                  </div>
+                  </span>
+                  <h3 class="text-white mb-4.5 font-bold text-heading-4">
+                    Our Vision for Digital Empowerment
+                  </h3>
+                  <p class="font-medium mb-10">
+                    At Aaeriosoft, we are dedicated to driving digital
+                    transformation
+                    that help businesses thrive in a competitive world.
+                  </p>
+                  <a class="features-button-gradient relative inline-flex items-center gap-1.5 rounded-full py-3 px-6 text-white text-sm ease-in duration-300 hover:shadow-button"
+                    href="about.html">
+                    Learn more
+                    <svg fill="none" height="12" viewbox="0 0 14 12" width="14" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.3992 5.60002L8.22422 0.350024C7.99922 0.125024 7.64922 0.125024 7.42422 0.350024C7.19922 0.575024 7.19922 0.925025 7.42422 1.15002L11.6242 5.42503H0.999219C0.699219 5.42503 0.449219 5.67502 0.449219 5.97502C0.449219 6.27502 0.699219 6.55003 0.999219 6.55003H11.6742L7.42422 10.875C7.19922 11.1 7.19922 11.45 7.42422 11.675C7.52422 11.775 7.67422 11.825 7.82422 11.825C7.97422 11.825 8.12422 11.775 8.22422 11.65L13.3992 6.40002C13.6242 6.17502 13.6242 5.82502 13.3992 5.60002Z"
+                        fill="white"></path>
+                    </svg>
+                  </a>
                 </div>
-                <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden -mx-28">
-                  <span class="absolute right-0 bottom-0"><img alt="shape" src="../images/shape-01.png" /></span>
-                  <span class="absolute left-0 top-0"><img alt="shape" src="../images/shape-02.svg" /></span>
-                  <span class="absolute left-1/2 -translate-x-1/2 bottom-0">
-                    <img alt="blur" class="max-w-none" src="../images/blur-03.svg" />
-                  </span>
-                  <span class="absolute left-1/2 -translate-x-1/2 bottom-0">
-                    <img alt="blur" class="max-w-none" src="../images/blur-04.svg" />
-                  </span>
-                  <span class="absolute left-1/2 -translate-x-1/2 bottom-0">
-                    <img alt="blur" class="max-w-none" src="../images/blur-05.svg" />
-                  </span>
-                  <span class="absolute right-0 top-0">
-                    <img alt="shape" class="max-w-none" src="../images/shape-03.svg" />
-                  </span>
+                <div class="max-w-[428px] w-full hidden sm:block">
+                  <img alt="icon" src="../images/big-icon.svg" />
                 </div>
+              </div>
+              <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden -mx-28">
+                <span class="absolute right-0 bottom-0"><img alt="shape" src="../images/shape-01.png" /></span>
+                <span class="absolute left-0 top-0"><img alt="shape" src="../images/shape-02.svg" /></span>
+                <span class="absolute left-1/2 -translate-x-1/2 bottom-0">
+                  <img alt="blur" class="max-w-none" src="../images/blur-03.svg" />
+                </span>
+                <span class="absolute left-1/2 -translate-x-1/2 bottom-0">
+                  <img alt="blur" class="max-w-none" src="../images/blur-04.svg" />
+                </span>
+                <span class="absolute left-1/2 -translate-x-1/2 bottom-0">
+                  <img alt="blur" class="max-w-none" src="../images/blur-05.svg" />
+                </span>
+                <span class="absolute right-0 top-0">
+                  <img alt="shape" class="max-w-none" src="../images/shape-03.svg" />
+                </span>
               </div>
             </div>
           </div>
-          <div class="sm:col-span-7">
-            <div class="relative rounded-3xl features-box-border">
-              <div class="relative overflow-hidden rounded-3xl px-11 pt-12.5 pb-14 box-hover box-hover-small">
-                <div class="relative z-20">
-                  <span
-                    class="icon-border relative max-w-[80px] w-full h-20 rounded-full inline-flex items-center justify-center mb-13.5 mx-auto">
-                    <img alt="icon" src="../images/icon-05.svg" />
-                  </span>
-                  <h3 class="text-white mb-4.5 font-semibold text-heading-6">
-                    Reliable Assistance for Every Digital Needs
-                  </h3>
-                  <p class="font-medium">
-                    Our team is always ready to guide you with timely support and personalized assistance — ensuring
-                    your projects run smoothly from start to finish.
-                  </p>
-                </div>
-                <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
-                  <span class="absolute left-0 bottom-0">
-                    <img alt="blur" class="max-w-none" src="../images/blur-06.svg" />
-                  </span>
-                  <span class="absolute right-0 top-0">
-                    <img alt="blur" class="max-w-none" src="../images/blur-07.svg" />
-                  </span>
-                  <span class="absolute right-[16%] top-[16%]"><img alt="shape" src="../images/shape-04.svg" /></span>
-                  <span class="absolute left-0 bottom-0">
-                    <img alt="blur" class="max-w-none" src="../images/blur-08.svg" />
-                  </span>
-                  <span class="absolute left-0 bottom-0">
-                    <img alt="blur" class="max-w-none" src="../images/blur-09.svg" />
-                  </span>
-                </div>
+        </div>
+        <div class="sm:col-span-7">
+          <div class="relative rounded-3xl features-box-border">
+            <div class="relative overflow-hidden rounded-3xl px-11 pt-12.5 pb-14 box-hover box-hover-small">
+              <div class="relative z-20">
+                <span
+                  class="icon-border relative max-w-[80px] w-full h-20 rounded-full inline-flex items-center justify-center mb-13.5 mx-auto">
+                  <img alt="icon" src="../images/icon-05.svg" />
+                </span>
+                <h3 class="text-white mb-4.5 font-semibold text-heading-6">
+                  Reliable Assistance for Every Digital Needs
+                </h3>
+                <p class="font-medium">
+                  Our team is always ready to guide you with timely support and personalized assistance — ensuring
+                  your projects run smoothly from start to finish.
+                </p>
+              </div>
+              <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
+                <span class="absolute left-0 bottom-0">
+                  <img alt="blur" class="max-w-none" src="../images/blur-06.svg" />
+                </span>
+                <span class="absolute right-0 top-0">
+                  <img alt="blur" class="max-w-none" src="../images/blur-07.svg" />
+                </span>
+                <span class="absolute right-[16%] top-[16%]"><img alt="shape" src="../images/shape-04.svg" /></span>
+                <span class="absolute left-0 bottom-0">
+                  <img alt="blur" class="max-w-none" src="../images/blur-08.svg" />
+                </span>
+                <span class="absolute left-0 bottom-0">
+                  <img alt="blur" class="max-w-none" src="../images/blur-09.svg" />
+                </span>
               </div>
             </div>
           </div>
-          <div class="sm:col-span-5">
-            <div class="relative rounded-3xl features-box-border">
-              <div class="relative overflow-hidden rounded-3xl px-11 pt-12.5 pb-14 box-hover box-hover-small">
-                <div class="relative z-20">
-                  <span
-                    class="icon-border relative max-w-[80px] w-full h-20 rounded-full inline-flex items-center justify-center mb-13.5 mx-auto">
-                    <img alt="icon" src="../images/icon-07.svg" />
-                  </span>
-                  <h3 class="text-white mb-4.5 font-semibold text-heading-6">
-                    Trusted Partnerships
-                  </h3>
-                  <p class="font-medium">
-                    We believe in building strong, trusted relationships and solutions you can depend on.
-                  </p>
-                </div>
-                <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
-                  <span class="absolute right-[14%] top-[17%]"><img alt="shape" src="../images/shape-05.svg" /></span>
-                  <span class="absolute left-0 bottom-0">
-                    <img alt="blur" class="max-w-none" src="../images/blur-10.svg" />
-                  </span>
-                  <span class="absolute top-0 right-0">
-                    <img alt="blur" class="max-w-none" src="../images/blur-11.svg" />
-                  </span>
-                  <span class="absolute top-0 right-0">
-                    <img alt="blur" class="max-w-none" src="../images/blur-12.svg" />
-                  </span>
-                </div>
+        </div>
+        <div class="sm:col-span-5">
+          <div class="relative rounded-3xl features-box-border">
+            <div class="relative overflow-hidden rounded-3xl px-11 pt-12.5 pb-14 box-hover box-hover-small">
+              <div class="relative z-20">
+                <span
+                  class="icon-border relative max-w-[80px] w-full h-20 rounded-full inline-flex items-center justify-center mb-13.5 mx-auto">
+                  <img alt="icon" src="../images/icon-07.svg" />
+                </span>
+                <h3 class="text-white mb-4.5 font-semibold text-heading-6">
+                  Trusted Partnerships
+                </h3>
+                <p class="font-medium">
+                  We believe in building strong, trusted relationships and solutions you can depend on.
+                </p>
+              </div>
+              <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
+                <span class="absolute right-[14%] top-[17%]"><img alt="shape" src="../images/shape-05.svg" /></span>
+                <span class="absolute left-0 bottom-0">
+                  <img alt="blur" class="max-w-none" src="../images/blur-10.svg" />
+                </span>
+                <span class="absolute top-0 right-0">
+                  <img alt="blur" class="max-w-none" src="../images/blur-11.svg" />
+                </span>
+                <span class="absolute top-0 right-0">
+                  <img alt="blur" class="max-w-none" src="../images/blur-12.svg" />
+                </span>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="py-19">
-        <div class="max-w-[1104px] mx-auto px-4 sm:px-8 xl:px-0">
-          <div class="relative overflow-hidden z-10">
-            <span
-              class="max-w-[128px] w-full h-[37px] block inset-0 pointer-events-none absolute z-10 left-0 top-1/2 -translate-y-1/2 bg-gradient-to-l from-dark/0 to-dark/100"></span>
-            <span
-              class="max-w-[128px] w-full h-[37px] block inset-0 pointer-events-none absolute z-10 left-auto top-1/2 -translate-y-1/2 bg-gradient-to-r from-dark/0 to-dark/100"></span>
-            <div class="swiper clients-carousel">
-              <div class="swiper-wrapper items-center select-none !ease-linear">
-                <div class="swiper-slide !w-auto">
-                  <a href="#.html">
-                    <img alt="client" src="../images/client-01.svg" />
-                  </a>
-                </div>
-                <div class="swiper-slide !w-auto">
-                  <a href="#.html">
-                    <img alt="client" src="../images/client-02.svg" />
-                  </a>
-                </div>
-                <div class="swiper-slide !w-auto">
-                  <a href="#.html">
-                    <img alt="client" src="../images/client-03.svg" />
-                  </a>
-                </div>
-                <div class="swiper-slide !w-auto">
-                  <a href="#.html">
-                    <img alt="client" src="../images/client-04.svg" />
-                  </a>
-                </div>
-                <div class="swiper-slide !w-auto">
-                  <a href="#.html">
-                    <img alt="client" src="../images/client-05.svg" />
-                  </a>
-                </div>
-                <div class="swiper-slide !w-auto">
-                  <a href="#.html">
-                    <img alt="client" src="../images/client-06.svg" />
-                  </a>
-                </div>
-                <div class="swiper-slide !w-auto">
-                  <a href="#.html">
-                    <img alt="client" class="mt-3" src="../images/client-07.svg" />
-                  </a>
-                </div>
-                <div class="swiper-slide !w-auto">
-                  <a href="#.html">
-                    <img alt="client" src="../images/client-01.svg" />
-                  </a>
-                </div>
-                <div class="swiper-slide !w-auto">
-                  <a href="#.html">
-                    <img alt="client" src="../images/client-02.svg" />
-                  </a>
-                </div>
-                <div class="swiper-slide !w-auto">
-                  <a href="#.html">
-                    <img alt="client" src="../images/client-03.svg" />
-                  </a>
-                </div>
-                <div class="swiper-slide !w-auto">
-                  <a href="#.html">
-                    <img alt="client" src="../images/client-04.svg" />
-                  </a>
-                </div>
-                <div class="swiper-slide !w-auto">
-                  <a href="#.html">
-                    <img alt="client" src="../images/client-05.svg" />
-                  </a>
-                </div>
-                <div class="swiper-slide !w-auto">
-                  <a href="#.html">
-                    <img alt="client" src="../images/client-06.svg" />
-                  </a>
-                </div>
-                <div class="swiper-slide !w-auto">
-                  <a href="#.html">
-                    <img alt="client" class="mt-3" src="../images/client-07.svg" />
-                  </a>
-                </div>
-                <div class="swiper-slide !w-auto">
-                  <a href="#.html">
-                    <img alt="client" src="../images/client-01.svg" />
-                  </a>
-                </div>
-                <div class="swiper-slide !w-auto">
-                  <a href="#.html">
-                    <img alt="client" src="../images/client-02.svg" />
-                  </a>
-                </div>
-                <div class="swiper-slide !w-auto">
-                  <a href="#.html">
-                    <img alt="client" src="../images/client-03.svg" />
-                  </a>
-                </div>
-                <div class="swiper-slide !w-auto">
-                  <a href="#.html">
-                    <img alt="client" src="../images/client-04.svg" />
-                  </a>
-                </div>
-                <div class="swiper-slide !w-auto">
-                  <a href="#.html">
-                    <img alt="client" src="../images/client-05.svg" />
-                  </a>
-                </div>
-                <div class="swiper-slide !w-auto">
-                  <a href="#.html">
-                    <img alt="client" src="../images/client-06.svg" />
-                  </a>
-                </div>
-                <div class="swiper-slide !w-auto">
-                  <a href="#.html">
-                    <img alt="client" class="mt-3" src="../images/client-07.svg" />
-                  </a>
-                </div>
-              </div>
+    </div>
+  </section>
+  <section class="py-19">
+    <div class="max-w-[1104px] mx-auto px-4 sm:px-8 xl:px-0">
+      <div class="relative overflow-hidden z-10">
+        <span
+          class="max-w-[128px] w-full h-[37px] block inset-0 pointer-events-none absolute z-10 left-0 top-1/2 -translate-y-1/2 bg-gradient-to-l from-dark/0 to-dark/100"></span>
+        <span
+          class="max-w-[128px] w-full h-[37px] block inset-0 pointer-events-none absolute z-10 left-auto top-1/2 -translate-y-1/2 bg-gradient-to-r from-dark/0 to-dark/100"></span>
+        <div class="swiper clients-carousel">
+          <div class="swiper-wrapper items-center select-none !ease-linear">
+            <div class="swiper-slide !w-auto">
+              <a href="#.html">
+                <img alt="client" src="../images/client-01.svg" />
+              </a>
+            </div>
+            <div class="swiper-slide !w-auto">
+              <a href="#.html">
+                <img alt="client" src="../images/client-02.svg" />
+              </a>
+            </div>
+            <div class="swiper-slide !w-auto">
+              <a href="#.html">
+                <img alt="client" src="../images/client-03.svg" />
+              </a>
+            </div>
+            <div class="swiper-slide !w-auto">
+              <a href="#.html">
+                <img alt="client" src="../images/client-04.svg" />
+              </a>
+            </div>
+            <div class="swiper-slide !w-auto">
+              <a href="#.html">
+                <img alt="client" src="../images/client-05.svg" />
+              </a>
+            </div>
+            <div class="swiper-slide !w-auto">
+              <a href="#.html">
+                <img alt="client" src="../images/client-06.svg" />
+              </a>
+            </div>
+            <div class="swiper-slide !w-auto">
+              <a href="#.html">
+                <img alt="client" class="mt-3" src="../images/client-07.svg" />
+              </a>
+            </div>
+            <div class="swiper-slide !w-auto">
+              <a href="#.html">
+                <img alt="client" src="../images/client-01.svg" />
+              </a>
+            </div>
+            <div class="swiper-slide !w-auto">
+              <a href="#.html">
+                <img alt="client" src="../images/client-02.svg" />
+              </a>
+            </div>
+            <div class="swiper-slide !w-auto">
+              <a href="#.html">
+                <img alt="client" src="../images/client-03.svg" />
+              </a>
+            </div>
+            <div class="swiper-slide !w-auto">
+              <a href="#.html">
+                <img alt="client" src="../images/client-04.svg" />
+              </a>
+            </div>
+            <div class="swiper-slide !w-auto">
+              <a href="#.html">
+                <img alt="client" src="../images/client-05.svg" />
+              </a>
+            </div>
+            <div class="swiper-slide !w-auto">
+              <a href="#.html">
+                <img alt="client" src="../images/client-06.svg" />
+              </a>
+            </div>
+            <div class="swiper-slide !w-auto">
+              <a href="#.html">
+                <img alt="client" class="mt-3" src="../images/client-07.svg" />
+              </a>
+            </div>
+            <div class="swiper-slide !w-auto">
+              <a href="#.html">
+                <img alt="client" src="../images/client-01.svg" />
+              </a>
+            </div>
+            <div class="swiper-slide !w-auto">
+              <a href="#.html">
+                <img alt="client" src="../images/client-02.svg" />
+              </a>
+            </div>
+            <div class="swiper-slide !w-auto">
+              <a href="#.html">
+                <img alt="client" src="../images/client-03.svg" />
+              </a>
+            </div>
+            <div class="swiper-slide !w-auto">
+              <a href="#.html">
+                <img alt="client" src="../images/client-04.svg" />
+              </a>
+            </div>
+            <div class="swiper-slide !w-auto">
+              <a href="#.html">
+                <img alt="client" src="../images/client-05.svg" />
+              </a>
+            </div>
+            <div class="swiper-slide !w-auto">
+              <a href="#.html">
+                <img alt="client" src="../images/client-06.svg" />
+              </a>
+            </div>
+            <div class="swiper-slide !w-auto">
+              <a href="#.html">
+                <img alt="client" class="mt-3" src="../images/client-07.svg" />
+              </a>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
-     <section>
-      <div class="max-w-[1170px] mx-auto px-4 sm:px-8 xl:px-0">
-        <div class="cta-box-gradient bg-dark rounded-[30px] relative overflow-hidden px-4 py-20 lg:py-25 z-999">
-          <span class="absolute bottom-0 left-0 -z-1"><img alt="grid" src="../images/grid.svg" /></span>
-          <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
-            <span class="absolute left-1/2 bottom-0 -translate-x-1/2 -z-1">
-              <img alt="blur" class="max-w-none" src="../images/blur-22.svg" />
-            </span>
-            <span class="absolute left-1/2 bottom-0 -translate-x-1/2 -z-1">
-              <img alt="blur" class="max-w-none" src="../images/blur-23.svg" />
-            </span>
-            <span class="absolute left-1/2 bottom-0 -translate-x-1/2 -z-1">
-              <img alt="blur" class="max-w-none" src="../images/blur-24.svg" />
-            </span>
-          </div>
-          <div class="max-w-[482px] w-full h-60 overflow-hidden absolute -z-1 -bottom-25 left-1/2 -translate-x-1/2">
-            <div class="stars"></div>
-            <div class="stars2"></div>
-          </div>
-          <div class="wow fadeInUp text-center">
-            <span
-              class="hero-subtitle-gradient relative mb-4 font-medium text-sm inline-flex items-center gap-2 py-2 px-4.5 rounded-full">
-              <img alt="icon" src="../images/icon-title.svg" />
-              <span class="hero-subtitle-text"> Join Our Team </span>
-            </span>
-            <h2 class="text-white mb-4.5 text-2xl font-extrabold sm:text-4xl xl:text-heading-2">
-              Shape the Future With Us
-            </h2>
-            <p class="max-w-[714px] mx-auto font-medium mb-9">
-             At Aaeriosoft, we believe people are the driving force behind innovation. We’re looking for passionate, curious, and creative minds to help us build solutions that empower businesses worldwide.
-            </p>
-            <a class="hero-button-gradient inline-flex rounded-lg py-3 px-7 text-white font-medium ease-in duration-300 hover:opacity-80"
-              href="jobs.html">
-              Open Job Roles
-            </a>
-          </div>
+  <section>
+    <div class="max-w-[1170px] mx-auto px-4 sm:px-8 xl:px-0">
+      <div class="cta-box-gradient bg-dark rounded-[30px] relative overflow-hidden px-4 py-20 lg:py-25 z-999">
+        <span class="absolute bottom-0 left-0 -z-1"><img alt="grid" src="../images/grid.svg" /></span>
+        <div class="absolute -z-10 pointer-events-none inset-0 overflow-hidden">
+          <span class="absolute left-1/2 bottom-0 -translate-x-1/2 -z-1">
+            <img alt="blur" class="max-w-none" src="../images/blur-22.svg" />
+          </span>
+          <span class="absolute left-1/2 bottom-0 -translate-x-1/2 -z-1">
+            <img alt="blur" class="max-w-none" src="../images/blur-23.svg" />
+          </span>
+          <span class="absolute left-1/2 bottom-0 -translate-x-1/2 -z-1">
+            <img alt="blur" class="max-w-none" src="../images/blur-24.svg" />
+          </span>
+        </div>
+        <div class="max-w-[482px] w-full h-60 overflow-hidden absolute -z-1 -bottom-25 left-1/2 -translate-x-1/2">
+          <div class="stars"></div>
+          <div class="stars2"></div>
+        </div>
+        <div class="wow fadeInUp text-center">
+          <span
+            class="hero-subtitle-gradient relative mb-4 font-medium text-sm inline-flex items-center gap-2 py-2 px-4.5 rounded-full">
+            <img alt="icon" src="../images/icon-title.svg" />
+            <span class="hero-subtitle-text"> Join Our Team </span>
+          </span>
+          <h2 class="text-white mb-4.5 text-2xl font-extrabold sm:text-4xl xl:text-heading-2">
+            Shape the Future With Us
+          </h2>
+          <p class="max-w-[714px] mx-auto font-medium mb-9">
+            At Aaeriosoft, we believe people are the driving force behind innovation. We’re looking for passionate,
+            curious, and creative minds to help us build solutions that empower businesses worldwide.
+          </p>
+          <a class="hero-button-gradient inline-flex rounded-lg py-3 px-7 text-white font-medium ease-in duration-300 hover:opacity-80"
+            href="jobs.html">
+            Open Job Roles
+          </a>
         </div>
       </div>
-    </section>
-    
-<footer class="relative z-10 pb-17.5 lg:pb-22.5 xl:pb-27.5">
+    </div>
+  </section>
+
+  <footer class="relative z-10 pb-17.5 lg:pb-22.5 xl:pb-27.5">
     <div class="absolute bottom-0 left-0 w-full flex flex-col gap-3 -z-1 opacity-50">
       <div class="w-full h-[1.24px] footer-bg-gradient"></div>
       <div class="w-full h-[2.47px] footer-bg-gradient"></div>
@@ -544,11 +549,9 @@
                 <li>
                   <a class="font-medium ease-in duration-300 hover:text-white flex items-center gap-2" href="jobs.html">
                     Jobs
-
                     <span class="bg-green-600 text-white text-xs font-semibold px-2 py-0.5 rounded-full">
                       Hiring
                     </span>
-
                   </a>
                 </li>
               </ul>
@@ -567,9 +570,122 @@
       </path>
     </svg>
   </button>
+
+
+  <!-- Hiring Exam Popup -->
+  <div id="hiring-popup-overlay" class="hiring-popup-overlay">
+    <div class="hiring-popup-content">
+      <button id="hiring-popup-close-btn" class="hiring-popup-close-btn">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <div class="hiring-popup-badge">
+        <i class="fas fa-bolt mr-2"></i>Hiring Opportunity
+      </div>
+
+      <h2 class="hiring-popup-title">Join Our Team of Innovators</h2>
+
+      <p class="hiring-popup-description">
+        We're looking for talented individuals to join our growing team. Take our technical assessment to showcase your
+        skills and start your journey with us.
+      </p>
+
+      <div class="hiring-popup-features">
+        <div class="hiring-popup-feature">
+          <div class="hiring-popup-feature-icon">
+            <i class="fas fa-code text-purple-400 text-xl"></i>
+          </div>
+          <div class="hiring-popup-feature-text">
+            <h4>Technical Assessment</h4>
+            <p>Showcase your coding skills</p>
+          </div>
+        </div>
+
+        <div class="hiring-popup-feature">
+          <div class="hiring-popup-feature-icon">
+            <i class="fas fa-clock text-purple-400 text-xl"></i>
+          </div>
+          <div class="hiring-popup-feature-text">
+            <h4>90 Minute Challenge</h4>
+            <p>Complete at your own pace</p>
+          </div>
+        </div>
+
+        <div class="hiring-popup-feature">
+          <div class="hiring-popup-feature-icon">
+            <i class="fas fa-trophy text-purple-400 text-xl"></i>
+          </div>
+          <div class="hiring-popup-feature-text">
+            <h4>Fast-Track Hiring</h4>
+            <p>Quick feedback process</p>
+          </div>
+        </div>
+
+        <div class="hiring-popup-feature">
+          <div class="hiring-popup-feature-icon">
+            <i class="fas fa-users text-purple-400 text-xl"></i>
+          </div>
+          <div class="hiring-popup-feature-text">
+            <h4>Join Our Community</h4>
+            <p>Work with industry experts</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hiring-popup-btn-container">
+        <a href="https://exam.aaeriosoft.co.in/" class="hiring-popup-btn hiring-popup-btn-primary">
+          <i class="fas fa-play-circle mr-2"></i> Start Assessment
+        </a>
+        <button id="hiring-popup-roles-btn" class="hiring-popup-btn hiring-popup-btn-secondary">
+          <i class="fas fa-briefcase mr-2"></i> View Open Roles
+        </button>
+      </div>
+
+      <p class="hiring-popup-note">By proceeding, you agree to our assessment terms</p>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const hiringPopupOverlay = document.getElementById('hiring-popup-overlay');
+      const hiringPopupCloseBtn = document.getElementById('hiring-popup-close-btn');
+      const hiringPopupLaterBtn = document.getElementById('hiring-popup-later-btn');
+      const showPopupBtn = document.getElementById('show-popup-btn');
+
+      // Check if popup was already shown in this session
+      const popupShown = sessionStorage.getItem('hiringPopupShown');
+
+      // Function to show popup
+      function showHiringPopup() {
+        hiringPopupOverlay.classList.add('active');
+        sessionStorage.setItem('hiringPopupShown', 'true');
+      }
+
+      // Function to hide popup
+      function hideHiringPopup() {
+        hiringPopupOverlay.classList.remove('active');
+      }
+
+      // Show popup automatically after 2 seconds if not shown before
+      if (!popupShown) {
+        setTimeout(showHiringPopup, 2000);
+      }
+
+      // Event listeners
+      hiringPopupCloseBtn.addEventListener('click', hideHiringPopup);
+      hiringPopupLaterBtn.addEventListener('click', hideHiringPopup);
+      showPopupBtn.addEventListener('click', showHiringPopup);
+
+      // Close popup when clicking outside the content
+      hiringPopupOverlay.addEventListener('click', function (e) {
+        if (e.target === hiringPopupOverlay) {
+          hideHiringPopup();
+        }
+      });
+    });
+  </script>
+
   <script defer="" src="../js/bundle.js"></script>
   <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'9763a93d1c5bd2d7',t:'MTc1NjM4MjU2MA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
 </body>
-
-    </body>
 </html>
